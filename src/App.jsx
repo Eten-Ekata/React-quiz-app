@@ -1,11 +1,12 @@
+import Header from './components/Header'
 import './index.css'
 
 function App() {
 
   return (
-    <>
-     <h1>etehh</h1>
-    </>
+    <div className='app'>
+      <Header/>
+    </div>
   )
 }
 
