@@ -10,6 +10,7 @@ import Question from './components/Question'
 import Timer from './components/Timer'
 import NextButton from './components/NextButton'
 import Footer from './components/Footer'
+import FinishScreen from './components/FinishScreen'
 
 function App() {
  const {status} = useQuiz()
@@ -29,7 +30,9 @@ function App() {
             <NextButton />
             </Footer>
           </>
+          
         )}
+        {status === "finished" && <FinishScreen />}
     </Main>
 
 

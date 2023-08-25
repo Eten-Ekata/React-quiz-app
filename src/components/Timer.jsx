@@ -5,14 +5,13 @@ function Timer() {
   const { dispatch, secondsRemaining } = useQuiz();
 
   const mins = Math.floor(secondsRemaining / 60);
-  console.log(mins)
   const seconds = secondsRemaining % 60;
 
   useEffect(
     function () {
       const id = setInterval(function () {
         dispatch({ type: "tick" });
-      }, 9000);
+      }, 900);
 
       return () => clearInterval(id);
     },
