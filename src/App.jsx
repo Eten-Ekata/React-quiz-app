@@ -6,6 +6,7 @@ import Loader from './components/Loader'
 import Error from './components/Error'
 import StartScreen from './components/StartScreen'
 import Progress from './components/Progress'
+import Question from './components/Question'
 
 function App() {
  const {status} = useQuiz()
@@ -20,7 +21,7 @@ function App() {
     {status === "active" && (
           <>
             <Progress />
-            
+            <Question />
             
           </>
         )}
@@ -40,4 +41,4 @@ export default App
 //               <Timer />
 //               <NextButton />
 //             </Footer>
-//<Question />
+//
