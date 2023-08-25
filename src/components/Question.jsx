@@ -4,10 +4,6 @@ import Options from "./Options";
 function Question() {
   const { questions, index } = useQuiz();
   const question = questions.at(index);
-
-  console.log(question)
-  console.log(questions)
-
   return (
     <div>
       <h4>{question.question}</h4>

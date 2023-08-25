@@ -7,10 +7,11 @@ import Error from './components/Error'
 import StartScreen from './components/StartScreen'
 import Progress from './components/Progress'
 import Question from './components/Question'
+import Timer from './components/Timer'
+import Footer from './components/Footer'
 
 function App() {
  const {status} = useQuiz()
-
   return (
     <div className='app'>
       <Header/>
@@ -22,11 +23,12 @@ function App() {
           <>
             <Progress />
             <Question />
-            
+            <Footer>
+            <Timer />
+            </Footer>
           </>
         )}
     </Main>
-
 
 
 
@@ -37,8 +39,8 @@ function App() {
 export default App
 
 
-// <Footer>
-//               <Timer />
+// 
+//               
 //               <NextButton />
 //             </Footer>
 //
