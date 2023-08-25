@@ -8,6 +8,7 @@ import StartScreen from './components/StartScreen'
 import Progress from './components/Progress'
 import Question from './components/Question'
 import Timer from './components/Timer'
+import NextButton from './components/NextButton'
 import Footer from './components/Footer'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Question />
             <Footer>
             <Timer />
+            <NextButton />
             </Footer>
           </>
         )}
@@ -41,6 +43,6 @@ export default App
 
 // 
 //               
-//               <NextButton />
+//               
 //             </Footer>
 //

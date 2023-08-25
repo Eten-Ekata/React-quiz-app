@@ -7,7 +7,6 @@ function Timer() {
   const mins = Math.floor(secondsRemaining / 60);
   console.log(mins)
   const seconds = secondsRemaining % 60;
-  console.log(seconds)
 
   useEffect(
     function () {
